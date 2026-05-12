@@ -1,0 +1,12 @@
+#page{
+   width: 800px;
+   padding: 24px;
+   background-color: #adefeba4; 
+   border-radius: 24px;
+   margin: 48px auto;
+   font-size: 30px;
+}
+
+body{background-image:url(assets/half-moon-beach-bahamas.webp);
+     background-size: cover;
+}

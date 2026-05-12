@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="container,itens,eixo.css">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+  .container {
+    border: dashed;
+  }
+
+  .item{
+  --hue:0;
+  text-align: center;
+  background-color: hsl(var(--hue), 100%, 70%);
+  width: 300px;
+  }
+</style>
+
+<div class="container">
+    <div class="item" style="--hue:0">1</div>
+    <div class="item" style="--hue:100">2</div>
+    <div class="item" style="--hue:200">3</div>
+    <div class="item" style="--hue:300">4</div>
+        <div class="item" style="--hue:400">5</div>
+    <div class="item" style="--hue:500">6</div>
+    <div class="item" style="--hue:600">7</div>
+    <div class="item" style="--hue:700">8</div>
+</div>
+</body>
+</html>
