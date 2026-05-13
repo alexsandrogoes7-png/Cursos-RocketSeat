@@ -1,7 +1,8 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: var(--gray-100);
 }
 
 :root{
@@ -32,113 +33,9 @@
     --font-text: 'Maven Pro', sans-serif;
     --Text-md: 400 16px/140% var(--font-text);
     --Text-sm: 400 14px/140% var(--font-text);
-
-    
-
 }
 
 body{
-    color:var(--gray-200);
-    background-color: var(--gray-400);
+    background-color:var(--gray-400);
 }
 
-#hero {
-  width: 1366px;
-  
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 56px;
-  
-  background-image: url(../assets/background/background_intro.png);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-
-.list{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 16px;
-}
-
-.list figure{
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    background-color: var(--gray-400);
-    border-radius: 999px;
-    padding: 16px;
-}
-
-#projects{
-    width: 1366px;
-    
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    background-repeat: no-repeat;
-    margin: 0 auto;
-    background-color:var(--gray-500) ;
-}
-
-.p_img{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; 
-    align-items: center;
-    gap: 24px;
-}
-
-.p_img figure{
-    background-color: var(--gray-400);
-    padding: 8px 16px;
-    border-radius: 12px;
-    width: 330px;
-    text-align: left;   
-}
-
-.p_img>figure>img{
-    width: 306px;
-    
-}
-
-
-#services{
-    width: 1366px;
-    
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    background-color: var(--gray-600);
-    align-items: center;
-    gap: 56px;
-    padding: 88px;  
-
-    
-}
-
-.ser_list{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 16px;
-}
-
-
-#contact{
-    width: 1366px;
-    
-    display: flex;
-    flex-direction: column;
-    background-image: url(../assets/background/Background_Contacts.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    align-items: center;
-    margin: 0 auto;
-}

@@ -1,0 +1,84 @@
+.intro{
+    background-image: url("../assets/background/Background_Intro.png");
+    background-size: cover;
+    width: 100%;
+    margin: 0;
+    height: 750px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.avatar-wrapper{
+    position: relative;
+    margin-bottom: 3.5rem;
+}
+
+.avatar{
+    height: 100px;
+    width: 100px;
+    border-radius: 999px;
+    border:var(--red) 2px solid;
+    padding: 4px;
+}
+
+.code-simbol{
+    position: absolute;
+    bottom: 0;
+    right: 10px; 
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title{
+    font: var(--Title-lg);
+    margin: 1rem 0;
+}
+
+.subtitle{
+    font:var(--subtitle);
+    color:var(--gray-200);
+}
+
+.subtitle-primary{
+    color: var(--red);
+}
+
+.description{
+    font: var(--Text-sm);
+    color: var(--gray-300);
+    max-width: 700px;   /* Aqui está o segredo da quebra de linha */
+    text-align: center;
+}
+
+.tags-wrapper{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.tags-wrapper li{
+    display: flex;
+    align-items: center ;
+    background-color: var(--gray-400);
+    padding: 8px 16px;
+    gap:0.5rem;
+    font: var(--Text-md);
+    color: var(--gray-200);
+    border-radius: 999px;
+}
+
+
+
