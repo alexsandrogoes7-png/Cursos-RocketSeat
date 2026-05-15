@@ -31,6 +31,7 @@
 
 
     --font-text: 'Maven Pro', sans-serif;
+    --Text-md-bold: 500 16px/140% var(--font-text);
     --Text-md: 400 16px/140% var(--font-text);
     --Text-sm: 400 14px/140% var(--font-text);
 }
