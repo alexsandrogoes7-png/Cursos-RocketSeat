@@ -23,7 +23,7 @@ label + .radio-wrapper{
     & input,
     & input:focus,
     & input:hover{
-        all:unset;
+        all: unset;
         position: absolute;
         inset: 0;
     }
@@ -52,7 +52,7 @@ label + .radio-wrapper{
         border: 2px solid var(--stroke-highlight);
 
         & .radio-image{
-            background-image: url(../../assets/Icons_2/radio-cheked.svg);
+            background-image: url(../../assets/Icons_2/radio-checked.svg);
         }
     }
 }
