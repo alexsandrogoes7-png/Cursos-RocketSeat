@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de convite</title>
+
+    <link rel="stylesheet" href="styles/index.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Leckerli+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+        <div class="app">
+
+            <aside>
+                <div class="aside-container">
+                    <header>
+                        <img src="assets/Logo.svg" alt="Logo festivo">
+                        <h1>Festivite</h1>
+                        <p>Crie um convite digital para o seu evento</p>
+                    </header>
+                </div>
+            </aside>
+
+
+            <main>
+                <div class="main-container"> 
+                    <h1>Crie seu convite</h1>
+
+
+
+                    <form enctype="multipart/form-data" method="post">
+                        <fieldset class="about-event">
+
+                            <div class="event">
+                                <img src="assets/icons/calendar.svg" alt="calendar">
+                                <h2>Sobre o evento</h2>
+                            </div>
+
+                            <div>
+                                <h2>Título</h2>
+                                <input id="event-name" type="text" placeholder="Nome do evento">
+                            </div>
+
+                            <div>
+                                <h2>Início</h2>
+                                <input type="date" placeholder=", --:--">
+
+                                <h2>Fim</h2>
+                                <input type="date" placeholder=", --:--">
+                            </div>
+
+                            <div>
+                                <div>
+                                    <h2>Tipo</h2>
+                                    <select name="local" id="local">
+                                        <option value="present">Presencial</option>
+                                        <option value="online">Online</option>
+                                    </select>   
+                                    <option value="online">Online</option>
+                                </div>
+                                
+
+                                <div>
+
+                                    <h2>Local</h2>
+                                    <input type="text" placeholder="Link ou endereço">
+                                </div>
+
+                            </div>
+
+                            <div class="text-area-wrapper">
+                                <h2>Descrição</h2>
+                                <textarea name="decription" id="decription" cols="30" rows="5" placeholder="Escreva sobre os detalhes do evento"></textarea>
+                            </div>
+                        </fieldset>
+                        
+                    </form>
+                </div>     
+            </main>
+        </div>
+</body>
+</html>
