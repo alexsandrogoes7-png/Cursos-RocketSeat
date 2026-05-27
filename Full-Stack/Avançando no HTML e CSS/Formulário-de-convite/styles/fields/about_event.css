@@ -65,3 +65,8 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .text-area-wrapper{
     margin-bottom: 3rem;
 }
+
+.date-wrapper > div,
+.tipo_local-wrapper > div{
+    flex: 1;
+}

@@ -3,6 +3,7 @@
     grid-template-columns: 400px 1fr;;
     justify-content: center;
     height: 100vh;
+    background-color: var(--shape-body);
 }
 
 aside {
@@ -67,3 +68,4 @@ input,textarea,select{
     background-color: var(--input-base);
     font: var(--body-md-regular);
 }
+

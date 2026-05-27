@@ -5,6 +5,8 @@
     flex-direction: column;
     padding: 80px;
     background-color: var(--shape-body);  
+    max-width: 52rem;
+    margin-inline: auto;
 
     h1{
         font: var(--heading-md);
