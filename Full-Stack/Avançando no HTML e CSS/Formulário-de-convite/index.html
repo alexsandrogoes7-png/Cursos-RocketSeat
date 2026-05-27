@@ -38,49 +38,142 @@
                     <form enctype="multipart/form-data" method="post">
                         <fieldset class="about-event">
 
-                            <div class="event">
+                            <div class="event-wrapper">
                                 <img src="assets/icons/calendar.svg" alt="calendar">
                                 <h2>Sobre o evento</h2>
                             </div>
 
                             <div>
-                                <h2>Título</h2>
+                                <h3>Título</h3>
                                 <input id="event-name" type="text" placeholder="Nome do evento">
                             </div>
 
-                            <div>
-                                <h2>Início</h2>
-                                <input type="date" placeholder=", --:--">
-
-                                <h2>Fim</h2>
-                                <input type="date" placeholder=", --:--">
-                            </div>
-
-                            <div>
+                            <div class="date-wrapper">
                                 <div>
-                                    <h2>Tipo</h2>
-                                    <select name="local" id="local">
-                                        <option value="present">Presencial</option>
-                                        <option value="online">Online</option>
-                                    </select>   
-                                    <option value="online">Online</option>
+                                    <h3>Início</h3>
+                                    <input type="date" placeholder=", --:--">
                                 </div>
                                 
-
                                 <div>
-
-                                    <h2>Local</h2>
-                                    <input type="text" placeholder="Link ou endereço">
+                                    <h3>Fim</h3>
+                                    <input type="date" placeholder=", --:--">
                                 </div>
-
                             </div>
 
+                                <div class="tipo_local-wrapper">
+                                   <div class="tipo-evento-wrapper">
+                                    <h3>Tipo</h3>
+                                    <div class="opcoes-grupo">
+                                        <input type="radio" id="presencial" name="tipo" value="present">
+                                        <label for="presencial" class="botao-opcao">
+                                            <img src="assets/icons/building.svg" alt="Prédio"> 
+                                            <span>Presencial</span>
+                                        </label>
+
+                                        
+                                        <input type="radio" id="online" name="tipo" value="online">
+                                        <label for="online" class="botao-opcao">
+                                            <img src="assets/icons/video.svg" alt="Câmera">
+                                            <span>Online</span>
+                                        </label>
+                                    </div>
+                                </div>
+
+                                    
+
+                                    <div>
+
+                                        <h3>Local</h3>
+                                        <input type="text" placeholder="Link ou endereço">
+                                    </div>
+
+                                </div>
+
                             <div class="text-area-wrapper">
-                                <h2>Descrição</h2>
+                                <h3>Descrição</h3>
                                 <textarea name="decription" id="decription" cols="30" rows="5" placeholder="Escreva sobre os detalhes do evento"></textarea>
                             </div>
                         </fieldset>
-                        
+
+                        <fieldset>
+                            <div class="event-wrapper">
+                                <img src="assets/icons/paintbrush-vertical.svg" alt="pincel">
+                                <h2>Personalização</h2>
+                            </div>    
+
+                            <div class="main-color-wrapper">
+                                
+                                <h3>Cor principal</h3>
+                                <div class="colors-wrapper">
+                                    
+
+                                </div>
+
+                                <h3>Tema do evento</h3>
+                                <div class="background-wrapper" >
+                                    <figure>
+                                        <img src="assets/background-partys/Image.png" alt="Aniversário">
+                                        <h3>Aniversário</h3>
+                                    </figure>
+
+                                    <figure>
+                                        <img src="assets/background-partys/Image.png" alt="Aniversário">
+                                        <h3>Aniversário</h3>
+                                    </figure>
+
+                                    <figure>
+                                        <img src="assets/background-partys/Image.png" alt="Aniversário">
+                                        <h3>Aniversário</h3>
+                                    </figure>
+
+                                    <figure>
+                                        <img src="assets/background-partys/Image.png" alt="Aniversário">
+                                        <h3>Aniversário</h3>
+                                    </figure>
+
+                                    <figure>
+                                        <img src="assets/background-partys/Image.png" alt="Aniversário">
+                                        <h3>Aniversário</h3>
+                                    </figure>
+
+                                    <figure>
+                                        <img src="assets/background-partys/Image.png" alt="Aniversário">
+                                        <h3>Aniversário</h3>
+                                    </figure>
+
+                                    <figure>
+                                        <img src="assets/background-partys/Image.png" alt="Aniversário">
+                                        <h3>Aniversário</h3>
+                                    </figure>
+
+                                    <figure>
+                                        <img src="assets/background-partys/Image.png" alt="Aniversário">
+                                        <h3>Aniversário</h3>
+                                    </figure>
+
+                                    <figure>
+                                        <img src="assets/background-partys/Image.png" alt="Aniversário">
+                                        <h3>Aniversário</h3>
+                                    </figure>
+
+                                    <figure>
+                                        <img src="assets/background-partys/Image.png" alt="Aniversário">
+                                        <h3>Aniversário</h3>
+                                    </figure>
+
+                                    <figure>
+                                        <img src="assets/background-partys/Image.png" alt="Aniversário">
+                                        <h3>Aniversário</h3>
+                                    </figure>
+
+                                    <figure>
+                                        <img src="assets/background-partys/Image.png" alt="Aniversário">
+                                        <h3>Aniversário</h3>
+                                    </figure>
+                                </div>
+                            </div>
+                        </fieldset>
+
                     </form>
                 </div>     
             </main>

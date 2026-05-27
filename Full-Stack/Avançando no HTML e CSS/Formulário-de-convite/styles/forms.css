@@ -5,6 +5,12 @@
     flex-direction: column;
     padding: 80px;
     background-color: var(--shape-body);  
+
+    h1{
+        font: var(--heading-md);
+        color: var(--text-heading);
+        margin-bottom: 2.5rem;
+    }
 }
 
 fieldset{

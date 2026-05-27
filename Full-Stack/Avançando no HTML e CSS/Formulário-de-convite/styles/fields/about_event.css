@@ -1,4 +1,67 @@
-.event{
+.about-event{
     display: flex;
+    flex-direction: column;
     gap: 0.75rem;
+    justify-content: center;
+    
+
+    h3{
+        font: var(--body-sm-regular);
+        color: var(--text-body);
+        margin-bottom: 12px;
+    }
+}
+
+.event-wrapper{
+    display: flex;
+    gap: 12px;
+
+    h2{
+        font: var(--heading-sm);
+        color: var(--text-heading);
+    }
+}
+
+
+.tipo_local-wrapper{
+    display: flex;
+    gap: 1rem;
+}
+
+
+.date-wrapper{
+        display: flex;
+        gap: 1rem;   
+}
+
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+
+
+
+.tipo-evento-wrapper span {
+    font: var(--body-sm-regular); 
+    color: var(--text-body);
+    margin: 0;
+}
+
+.opcoes-grupo{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--input-base);
+    gap: 16px;
+    padding: 1rem;
+    border-radius: 8px;
+    
+
+    input[type="radio"] {
+        display: none;
+    }
+}
+
+.text-area-wrapper{
+    margin-bottom: 3rem;
 }

@@ -1,0 +1,17 @@
+.main-color-wrapper{
+    h3{
+        font: var(--body-sm-regular);
+        color: var(--text-body);
+        margin-bottom: 12px;
+    }
+}
+
+.background-wrapper{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0.5rem,8rem));
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    background-color: var(--shape-body);
+}
