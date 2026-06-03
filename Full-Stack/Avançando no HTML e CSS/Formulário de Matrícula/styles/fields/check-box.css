@@ -5,8 +5,8 @@
     align-items: flex-start;
 
     & strong{
-        font-weight: -500;
-        color: var(--stroke-highlight);
+            font-weight: -500;
+            color: var(--stroke-highlight);
     }
 }
 

@@ -1,0 +1,103 @@
+.contacts-wrapper{
+    margin-top: 3rem;
+    display: flex;
+    gap: 12px;
+
+    h2{
+        font: var(--heading-sm);
+        color: var(--text-heading);
+    }
+}
+
+.dados-pessoais-wrapper{
+    h3{
+        font: var(--body-sm-regular);
+        color: var(--text-body);
+        margin-bottom: 12px;
+    }
+}
+
+.mail-phone{
+    display: flex;
+    gap: 1rem;
+
+    div{
+        flex: 1;
+    }
+}
+
+.error{
+    visibility: hidden;
+    opacity: 0;
+
+    margin-top: .25rem;
+    min-height: 1rem;
+
+    color: var(--danger);
+    display: flex;
+    gap: .25rem;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    span{
+        font: var(--body-xs-regular);
+    }
+}
+
+#name:invalid{
+    outline: 1px solid var(--danger);
+}
+
+#name:invalid + .error{
+    visibility: visible;
+    opacity: 1;
+    margin-bottom: 1rem;
+}
+
+.separator {
+    width: 100%;
+    height: 1px;
+    background-color: var(--input-stroke);
+    margin: 3rem 0 3rem;
+}
+
+.terms{
+    margin-top: 1rem;
+    display: flex;
+    gap: .75rem;
+    align-items: flex-start;
+
+    label{
+        font: var(--body-sm-regular);
+        color: var(--text-body);
+
+        span{
+            font: var(--body-sm-bold);
+            color: var(--brand-light);
+        }
+    }
+}
+
+.checkbox{
+    position: relative;
+
+    & [type= "checkbox" ]{
+        all:unset;
+        position: absolute;
+        inset: 0;
+    }
+
+    .checkbox-image{
+        flex: 0 0 1.25rem;
+        height: 1.25rem;
+       
+        background-image: url(../../assets/icons/box-default.svg) ;
+    }
+
+
+
+    &:has(:checked) .checkbox-image{
+        background-image: url(../../assets/icons/box-hover.svg);
+    }
+}
+
