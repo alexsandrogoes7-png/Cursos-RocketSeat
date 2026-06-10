@@ -59,3 +59,32 @@ aside{
         }
     }
 }
+
+
+@media(max-width: 667px){
+    body{
+        overflow: auto;
+    }
+
+    #app{
+        grid-template-columns: 1fr;
+        height: auto;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* main,aside{
+        padding: 1.5rem;
+    } */
+
+    main{
+        order: 2;
+    }
+
+    aside{
+        order: 1;
+    }
+
+
+}

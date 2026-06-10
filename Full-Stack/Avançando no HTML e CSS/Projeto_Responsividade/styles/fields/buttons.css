@@ -28,3 +28,23 @@ button{
         }
     }
 }
+
+
+@media (max-width: 667px){
+
+    .actions-wrapper{
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .actions-wrapper button{
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        box-sizing: border-box;
+    }
+
+    .btn-secundary{
+        margin-left: 0;
+    }
+}
