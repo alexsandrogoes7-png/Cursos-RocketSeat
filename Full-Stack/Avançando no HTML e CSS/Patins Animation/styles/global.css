@@ -21,8 +21,8 @@
     /* Tipografia */
     --ff-base: "Montserrat", sans-serif;
 
-    /* Tamanhos de texto corrigidos */
-    --text-sm: 0.875rem; /* Corrigido de 0.087rem para 0.875rem (14px) */
+    /* Tamanhos de texto */
+    --text-sm: 0.875rem; 
     --text-base: 1rem;
     --text-lg: 2.5rem;
     --text-xl: 4rem;
@@ -31,6 +31,7 @@
 html, button {
     font: 500 1rem/1.5 var(--ff-base);
 }
+
 
 h1, h2 {
     font-family: 'Syne', sans-serif; /* Corrigido 'san-serif' para 'sans-serif' */
