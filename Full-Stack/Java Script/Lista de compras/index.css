@@ -33,3 +33,26 @@
     --border-primary: #D1D5DB;
     --border-hover: #B9C2D0;
 }
+
+.checkbox-container input[type="checkbox"] {
+  display: none;
+}
+
+.check-box{
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  cursor: pointer;
+
+  background-image: url('assets/state=Default.svg');
+}
+
+.check-box:hover{
+  background-image: url('assets/state=hover.svg');
+}
+
+.checkbox-container input[type="checkbox"]:checked + .check-box {
+  background-image: url('assets/state=selected.svg');
+}
