@@ -24,7 +24,7 @@ product2.details()
 
 //Exemplos de funções contrutoras.
 
-let myName = new String("Rodrigo")
+let myName = new String("Rodrigo").
 console.log(myName)
 
 let price = "40.6".replace(".","")
