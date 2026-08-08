@@ -1,16 +1,17 @@
-let message = "Estou estudando os fundamentos do JavaScript."
+//Cria o Array
+let fruits = ["Apple","Banana","Orange","Watermelon"]
+console.log(fruits)
 
-//Comprimento de uma string
-console.log(message.length)
+//Quantidade de itens do Array
+console.log(fruits.length)
 
-let password = "12345"
+//Acessa o item pelo índice
+console.log(fruits[0])
 
-if(password.length < 6 ){
-    console.log("A senha deve ter ao menos 6 caracteres")
-}
+//Tenta acessar indice quenão existe.
+console.log(fruits[8])
 
-//Quantos dígitos tem um número
-let value = 12345
-console.log(String(value).length)
+//Obtém dinamicamnte o último item.
+console.log(fruits[fruits.length-1])
 
-console.log(password)
+
