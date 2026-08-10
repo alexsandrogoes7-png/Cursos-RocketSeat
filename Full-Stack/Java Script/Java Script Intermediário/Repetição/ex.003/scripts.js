@@ -1,9 +1,10 @@
-let fullName ="Alexsandro Goes dos Santos"
+//DO WHILE: repete até que a condição especificada seja VERDADEIRA. No entanto, a instrução será executada pelo menos uma vez antes da codição ser verificada.
 
-console.log(fullName)
+let value = 0
 
-//Cria um Array com os nomes separando pelo espaço
-console.log(fullName.split(" "))
+do {
+    value++
+    console.log(value)
+}while(value<10)
 
-//Cria um Array com as letras
-console.log(Array.from(fullName))
+console.log("Segue fluxo...")

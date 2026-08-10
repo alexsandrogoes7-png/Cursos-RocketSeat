@@ -1,20 +1,17 @@
-let users = []
-console.log(users)
+/*FOR repete até que a condição especificada seja FALSA.
 
-//Adiciona um item ao final do Array
-users.push("Rodrigo")
-users.push("João")
-users.push("Marcos")
+    -variável de controle
+    -condição
+    -incremento ou decremento da variável de controle
+*/
 
-//Adiciona um item ao início do Array
-users.unshift("Ana")
+for(step = 0; step < 10; step++){
+    console.log(step)
+}
 
-console.log(users)
 
-//Remove do início do Array
-users.shift()
-
-//Remove do final do Array
-users.pop()
-
-console.log(users)
+let number = 7
+//Exemplo de tabuada
+for (step = 0; step<=10; step++){
+    console.log(`${number}x ${step} = ${number*step}`)
+}
