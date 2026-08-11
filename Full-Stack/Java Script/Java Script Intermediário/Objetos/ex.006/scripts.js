@@ -10,7 +10,7 @@ function createProduct(name){
 }
 
 
-//O new cria um novo objeto utilizando a estrutura da função construtora.
+//O new cria um novo objeto utilizando a estrutura da função construtora...
 const product1 = new createProduct("Teclado")
 console.log(product1.name)
 product1.details()
