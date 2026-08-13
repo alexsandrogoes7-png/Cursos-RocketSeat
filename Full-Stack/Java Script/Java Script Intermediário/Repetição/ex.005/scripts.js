@@ -1,17 +1,28 @@
-let fruits = ["Apple","Watermelon","Strawberry","Lemon"]
-console.log(fruits)
+// for...in executa iterações a partir de um objeto e percorre as propriedades.
 
-//Encontra e retorna o índice do elemento no Array
-let position1 = fruits.indexOf("Strawberry")
-console.log(position1)
+let person ={
+    name:"Rodrigo",
+    surname:"Gonçalves",
+    email:"rodrigo@email.com",
+}
 
-//Elementos não encontrados retornam -1
-let position2 = fruits.indexOf("Orange")
-console.log(position2)
+let steps = 1
 
-//Remove item pela posição do índice
-// fruits.splice(1, 2)
-fruits.splice(position1,1)
-console.log(fruits)
+for (let property in person){
 
+    console.log(steps)
 
+    //Exibe o nome da propriedade.
+    console.log(property)
+
+    //Exibe o conteúdo da propriedade.
+    console.log(person[property])
+
+    steps++
+}
+
+let students = ["Rodrigo", "João","Amanda"]
+
+for (let index in students){
+    console.log(students[index])
+}

@@ -1,30 +1,18 @@
-let myArray = [
-    "Um texto",
-    10,
-    true,
-    function(){
-        console.log("Uma função dentro do Array")
-    },
+//for...of itera sobre valores de um objeto iterável.
+
+let students = ["Rodrigo","Amanda","John"]
+
+for (let student of students){
+    console.log(student)
+}
+
+let user = [
     {
-        name: "Alex",
-        email: "alexsandrogoes7@gmail.com"
+        name:"Rodirgo",
+        email:"rodrigo@email.com",
     }
 ]
 
-//Texto
-console.log(myArray[0])
-
-//Númerp
-console.log(myArray[1])
-
-//Boolean
-console.log(myArray[2])
-
-//Function
-myArray[3]()
-
-//Objeto
-console.log(myArray[4].name)
-
-//Objeto
-console.log(myArray[4].email)
+for (let value of user){
+    console.log(value.email)
+}
