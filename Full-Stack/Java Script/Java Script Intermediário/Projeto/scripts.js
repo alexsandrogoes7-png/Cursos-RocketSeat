@@ -20,7 +20,7 @@ function formatCurrencyBRL(value){
 		currency:"BRL",
 	})
 	
-	//Retorna o valor formatado.
+	//Retorna o valor formatado aqui.
 	return value
 }
 
