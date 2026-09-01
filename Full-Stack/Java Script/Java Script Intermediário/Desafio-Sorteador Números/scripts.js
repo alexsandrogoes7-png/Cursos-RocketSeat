@@ -8,13 +8,13 @@ const botaoSortear = document.querySelector("#btn-sortear")
 
 botaoSortear.addEventListener("click", () => {
 
-    // 1. PEGAR OS VALORES
+
 
     const quantidade = Number(inputQuantidade.value)
     const inicio = Number(inputInicio.value)
     const fim = Number(inputFim.value)
 
-    // 2. VALIDAR
+    
 
     if (quantidade <= 0) {
         alert("Digite uma quantidade válida de números.")
@@ -32,7 +32,7 @@ botaoSortear.addEventListener("click", () => {
     }
 
 
-    // 3. GERAR NÚMEROS
+
 
     const numeros = []
 
@@ -43,23 +43,18 @@ botaoSortear.addEventListener("click", () => {
         ) + inicio
 
 
-        // 4. GUARDAR NO ARRAY
 
-        if (naoRepetir.checked) {
-
-            if (!numeros.includes(numeroAleatorio)) {
+        if(naoRepetir.checked){
+            if(!numeros.includes(numeroAleatorio)){
                 numeros.push(numeroAleatorio)
             }
 
-        } else {
-
+        }else{
             numeros.push(numeroAleatorio)
-
         }
     }
 
 
-    // 5. MOSTRAR RESULTADO
 
     console.log(numeros)
 
