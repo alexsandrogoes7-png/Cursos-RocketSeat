@@ -5,9 +5,28 @@ const inputFim = document.querySelector("#input-fim")
 const naoRepetir = document.querySelector("#nao-repetir")
 const botaoSortear = document.querySelector("#btn-sortear")
 
+const resultado = document.querySelector("#resultado")
+const formulario = document.querySelector("#formulario")
+const numerosSorteados = document.querySelector("#numeros-sorteados")
+
+const textoBotao = document.querySelector("#texto-botao")
+const iconeSortear = document.querySelector("#icone-sortear")
+const iconeNovamente = document.querySelector("#icone-novamente")
+
 
 botaoSortear.addEventListener("click", () => {
 
+    if (formulario.classList.contains("hidden")) {
+
+        formulario.classList.remove("hidden")
+        resultado.classList.add("hidden")
+        textoBotao.textContent = "Sortear"
+
+        iconeSortear.classList.remove("hidden")
+        iconeNovamente.classList.add("hidden")
+
+        return
+    }
 
 
     const quantidade = Number(inputQuantidade.value)
@@ -37,7 +56,7 @@ botaoSortear.addEventListener("click", () => {
     const numeros = []
 
     while (numeros.length < quantidade) {
-
+        
         const numeroAleatorio = Math.floor(
             Math.random() * (fim - inicio + 1)
         ) + inicio
@@ -54,8 +73,63 @@ botaoSortear.addEventListener("click", () => {
         }
     }
 
+    formulario.classList.add("hidden")
 
+    numerosSorteados.innerHTML = ""
 
-    console.log(numeros)
+    numeros.forEach((numero) => {
+
+        numerosSorteados.innerHTML += `
+            <div
+                data-numero="${numero}"
+                class="flex h-12 w-12 items-center justify-center rounded-md font-mono text-lg font-bold"
+                style="
+                    background-color: #C58DE7;
+                    color: #030203;
+                    transform: scale(1.5);
+                "
+            >
+
+                <span style="opacity: 0;">
+                    ${numero}
+                </span>
+            </div>
+        `
+    })
+
+    const quadrados = numerosSorteados.children
+
+    Array.from(quadrados).forEach((quadrado,index) => {
+
+        const numero = quadrado.querySelector("span")
+
+        quadrado.style.transition = "transform 1s ease-in-out"
+
+            setTimeout(() => {
+                quadrado.style.transform = "scale(2.5) rotate(360deg)"
+
+                    setTimeout(() => {
+                        numero.style.opacity = "1"
+
+                            setTimeout(() => {
+
+                                quadrado.style.backgroundColor = "transparent"
+                                numero.style.color = "#C58DE7"
+
+                            }, 300)
+
+                     }, 500)
+
+            },index * 1000)
+
+    })
+
+        resultado.classList.remove("hidden")
+        textoBotao.textContent = "Sortear novamente"
+
+        iconeSortear.classList.add("hidden")
+        iconeNovamente.classList.remove("hidden")
+
+        console.log(numeros)
 
 })
