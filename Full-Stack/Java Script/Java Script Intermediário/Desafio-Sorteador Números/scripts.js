@@ -33,7 +33,7 @@ botaoSortear.addEventListener("click", () => {
     const inicio = Number(inputInicio.value)
     const fim = Number(inputFim.value)
 
-    
+
 
     if (quantidade <= 0) {
         alert("Digite uma quantidade válida de números.")
@@ -56,19 +56,19 @@ botaoSortear.addEventListener("click", () => {
     const numeros = []
 
     while (numeros.length < quantidade) {
-        
+
         const numeroAleatorio = Math.floor(
             Math.random() * (fim - inicio + 1)
         ) + inicio
 
 
 
-        if(naoRepetir.checked){
-            if(!numeros.includes(numeroAleatorio)){
+        if (naoRepetir.checked) {
+            if (!numeros.includes(numeroAleatorio)) {
                 numeros.push(numeroAleatorio)
             }
 
-        }else{
+        } else {
             numeros.push(numeroAleatorio)
         }
     }
@@ -77,59 +77,70 @@ botaoSortear.addEventListener("click", () => {
 
     numerosSorteados.innerHTML = ""
 
-    numeros.forEach((numero) => {
 
-        numerosSorteados.innerHTML += `
-            <div
-                data-numero="${numero}"
-                class="flex h-12 w-12 items-center justify-center rounded-md font-mono text-lg font-bold"
-                style="
-                    background-color: #C58DE7;
-                    color: #030203;
-                    transform: scale(1.5);
-                "
-            >
 
-                <span style="opacity: 0;">
-                    ${numero}
-                </span>
-            </div>
-        `
-    })
+        numeros.forEach((numero) => {
+
+            
+                
+                numerosSorteados.innerHTML += `
+                        <div
+                            data-numero="${numero}"
+                            class="flex h-12 w-12 items-center justify-center rounded-md font-mono text-lg font-bold opacity-0"
+                            style="
+                                background-color: #C58DE7;
+                                color: #030203;
+                                transform: scale(1.5);
+                            "
+                        >
+
+                            <span style="opacity: 0;">
+                                ${numero}
+                            </span>
+                        </div>
+                    `
+            
+        })
 
     const quadrados = numerosSorteados.children
 
-    Array.from(quadrados).forEach((quadrado,index) => {
+    Array.from(quadrados).forEach((quadrado, index) => {
 
+        
         const numero = quadrado.querySelector("span")
+       
 
+        
         quadrado.style.transition = "transform 1s ease-in-out"
+     
+
+        setTimeout(() => {
+            quadrado.style.transform = "scale(2.5) rotate(360deg)"
+            quadrado.style.opacity ="1"
 
             setTimeout(() => {
-                quadrado.style.transform = "scale(2.5) rotate(360deg)"
+                numero.style.opacity = "1"
 
-                    setTimeout(() => {
-                        numero.style.opacity = "1"
+                setTimeout(() => {
 
-                            setTimeout(() => {
+                    quadrado.style.backgroundColor = "transparent"
+                    numero.style.color = "#C58DE7"
 
-                                quadrado.style.backgroundColor = "transparent"
-                                numero.style.color = "#C58DE7"
+                }, 300)
 
-                            }, 300)
+            }, 500)
 
-                     }, 500)
+        }, index * 1000)
 
-            },index * 1000)
 
     })
 
-        resultado.classList.remove("hidden")
-        textoBotao.textContent = "Sortear novamente"
+    resultado.classList.remove("hidden")
+    textoBotao.textContent = "Sortear novamente"
 
-        iconeSortear.classList.add("hidden")
-        iconeNovamente.classList.remove("hidden")
+    iconeSortear.classList.add("hidden")
+    iconeNovamente.classList.remove("hidden")
 
-        console.log(numeros)
+    console.log(numeros)
 
 })
