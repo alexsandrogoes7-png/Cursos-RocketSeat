@@ -11,7 +11,6 @@ const productNames = products.map((product)=>{
     return(product.name)
     
 })
-
 console.log(productNames)
 
 //Ex.002
