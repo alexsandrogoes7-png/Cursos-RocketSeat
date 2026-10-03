@@ -6,7 +6,7 @@ const product = {
 
 }
 
-const {description,price}= product
+const {description,price} = product
 
 console.log("Descrição: ",description)
 console.log("Preço R$",price)
