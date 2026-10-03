@@ -98,9 +98,6 @@ const promotionTotal = products
     .reduce((accumulator, product)=>{
         
        return accumulator + product.price
-    },0
-    
-    
-)
+    },0)
 
 console.log("O valor total de produtos em promoção é ",promotionTotal)
