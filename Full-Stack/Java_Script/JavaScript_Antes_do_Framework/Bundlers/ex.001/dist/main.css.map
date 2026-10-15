@@ -1,0 +1,1 @@
+{"version":3,"file":"main.css","mappings":";;;AAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA,C","sources":["webpack:///./src/css/styles.css"],"sourcesContent":["body{\r\n    background-color:#000;\r\n    color:#fff;\r\n}\r\n\r\nh1{\r\n    text-transform: uppercase;\r\n}"],"names":[],"sourceRoot":""}
